@@ -46,7 +46,16 @@ abline(simp)
 summary.lm(simp)
 ```
 
-The adjusted r square for head width is 0.5409
+The adjusted r square for head width is 0.5321
+
+```{r}
+simp <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The adjusted r square for head width is 0.5073
 
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
