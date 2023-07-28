@@ -78,4 +78,4 @@ summary.lm(simp)
 The adjusted r square for weight is 0.7423
 
 ## Conclusion/Discussion
-In conclusion we've conducted multiple tests and have figured out the worse (lowest) to best which is (highest). So starting with lowest its age (0.5073), head width (0.5321), weight (0.7423), CHEST (0.7869), head length (0.8483). Therefore after running these tests based of the results that we've received we can conclude that the best one is head length since it has the largest r square value.
+In conclusion the main question at hand that we've answered today is which regression model that does the best job in predicting the bear length and its correspondence to the bears neck size, age head weight and head length? After conducting multiple tests and have figured out the worse (lowest) to best which is (highest). So starting with lowest it is age (0.5073), head width (0.5321), weight (0.7423), CHEST (0.7869), head length (0.8483). Therefore after running these tests based of the results that we've received we can conclude that the best one is head length since it has the largest r square value.
