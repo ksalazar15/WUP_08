@@ -57,5 +57,16 @@ summary.lm(simp)
 
 The adjusted r square for head width is 0.5073
 
+```{r}
+simp <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The adjusted r square for CHEST is 0.7869
+
+
+
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
