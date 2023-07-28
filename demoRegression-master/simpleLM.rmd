@@ -1,7 +1,7 @@
 ---
 title: "simpleRegress"
-author: "put your name here"
-date: "Fall 2020"
+author: "Kevin Brandon Salazar"
+date: "Summer 2023"
 output: html_document
 ---
 
@@ -20,13 +20,33 @@ bears$MONTH<- as.factor(bears$MONTH)
 
 ## Model LENGTH ~ NECK  this is an example  
 
+We are to compute regression models finding one regression model that does the best job in predicting the bear length and its correspondence to the bears neck size, age head weight and head length.
+
 ```{r}
 simp <- lm(LENGTH~NECK,data=bears)
 plot(LENGTH~NECK,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
+The adjusted r square that is the largest is the best. For the neck size is 0.7476 
 
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The adjusted r square for head length is 0.8483
+
+```{r}
+simp <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The adjusted r square for head width is 0.5409
 
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
